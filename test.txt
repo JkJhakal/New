@@ -2,28 +2,7 @@
 #include<stdlib.h>
 typedef unsigned int uint32;
 //uint32 cntbits(uint32 data);
-#if 0
-int main()
-{
-uint32 data = 1000 ;
-uint32 sum;
-sum = cntbits(data);
-printf("no.of bits = %d\n",sum);
-}
 
-uint32 cntbits(uint32 data)
-{
-    uint32 i, sum;
-
-    sum = 0;
-    for (i = 0; i < 32; i++)
-    {
-        sum += (data >> i) & 1;
-    }
-    return sum;
-}
-
-#endif
 int cntbits(int data,char search);
 int main()
 {
